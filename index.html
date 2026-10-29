@@ -246,6 +246,18 @@
   .foot-logo{ height:42px; width:auto; }
   .foot-seal{ height:56px; width:auto; }
   .sign-text{ display:flex; flex-wrap:wrap; justify-content:space-between; gap:18px; width:100%; }
+
+  .files{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:8px; }
+  .files a{
+    display:flex; align-items:center; gap:12px; text-decoration:none;
+    background:var(--paper-2); border:1px solid var(--line); border-radius:10px;
+    padding:11px 14px; font-size:.92rem; color:var(--ink);
+    transition:background .15s,border-color .15s;
+  }
+  .files a:hover{ background:var(--emerald-tint); border-color:var(--gold-2); }
+  .files a svg{ width:18px; height:18px; flex:none; color:var(--gold-2); }
+  .files .ft{ flex:1; font-weight:600; }
+  .files .fn{ font-size:.74rem; color:var(--ink-soft); border:1px solid var(--line); border-radius:99px; padding:1px 10px; flex:none; }
 </style>
 
 
@@ -369,7 +381,7 @@
           <li><svg viewBox="0 0 100 100"><use href="#rubhizb"/></svg>توزيع المنهج الرسمي كصورة بدل الجدول الفارغ</li>
           <li><svg viewBox="0 0 100 100"><use href="#rubhizb"/></svg>سطر التوقيع: نوال الدوسري — المشرفة نانسي إلياس — المديرة البتول الدوسري</li>
         </ul>
-        <div class="upload-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 4v13m0 0-4-4m4 4 4-4M5 20h14"/></svg>أضيفي هنا ملفات تحضير الدروس</div>
+        <ul class="files"><li><a href="files/03-tahdir-1-taarif.docx" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5"/></svg><span class="ft">التعريف بعلم التفسير</span><span class="fn">Word</span></a></li><li><a href="files/03-tahdir-2-technology.docx" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5"/></svg><span class="ft">التقنية في خدمة القرآن الكريم وتفسيره</span><span class="fn">Word</span></a></li><li><a href="files/03-tahdir-3-ahammiya.docx" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5"/></svg><span class="ft">أهمية علم التفسير وضوابطه</span><span class="fn">Word</span></a></li><li><a href="files/03-tahdir-4-moallafat.docx" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5"/></svg><span class="ft">أبرز المؤلفات في علم التفسير</span><span class="fn">Word</span></a></li><li><a href="files/03-tahdir-5-fatiha.docx" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5"/></svg><span class="ft">تفسير سورة الفاتحة وتلاوتها</span><span class="fn">Word</span></a></li></ul>
       </div>
     </section>
 
@@ -388,7 +400,7 @@
           <li><svg viewBox="0 0 100 100"><use href="#rubhizb"/></svg>صور أو نماذج من تطبيقها الفعلي داخل الفصل</li>
           <li><svg viewBox="0 0 100 100"><use href="#rubhizb"/></svg>ربط كل استراتيجية بالدرس والهدف الذي خدمته</li>
         </ul>
-        <div class="upload-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 4v13m0 0-4-4m4 4 4-4M5 20h14"/></svg>أضيفي هنا نماذج الاستراتيجيات والأنشطة</div>
+        <ul class="files"><li><a href="files/04-irshad-report.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5"/></svg><span class="ft">تقرير حصة إرشاد: «رحلتي في طلب العلم»</span><span class="fn">PDF</span></a></li><li><a href="files/04-uhibbuka-ya-allah.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5"/></svg><span class="ft">عرض حصة إرشاد: «أحبك يا الله»</span><span class="fn">PDF</span></a></li></ul>
       </div>
     </section>
 
@@ -407,7 +419,7 @@
           <li><svg viewBox="0 0 100 100"><use href="#rubhizb"/></svg>أوراق عمل للتطبيق داخل الحصة أو كواجب منزلي</li>
           <li><svg viewBox="0 0 100 100"><use href="#rubhizb"/></svg>نماذج الإجابة إن وُجدت</li>
         </ul>
-        <div class="upload-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 4v13m0 0-4-4m4 4 4-4M5 20h14"/></svg>أضيفي هنا بنك الأسئلة وأوراق العمل</div>
+        <ul class="files"><li><a href="files/05-worksheet-sirat.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5"/></svg><span class="ft">ورقة عمل: «على الصراط المستقيم» (الورقة والحل)</span><span class="fn">صفحة</span></a></li></ul>
       </div>
     </section>
 
@@ -426,7 +438,7 @@
           <li><svg viewBox="0 0 100 100"><use href="#rubhizb"/></svg>تحليل نتائج الاختبار على مستوى الفصل</li>
           <li><svg viewBox="0 0 100 100"><use href="#rubhizb"/></svg>ملاحظات حول مستوى الأداء العام للطالبات</li>
         </ul>
-        <div class="upload-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 4v13m0 0-4-4m4 4 4-4M5 20h14"/></svg>أضيفي هنا نماذج الاختبارات</div>
+        <ul class="files"><li><a href="files/06-diagnostic-test.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5"/></svg><span class="ft">الاختبار التشخيصي: القرآن الكريم وتفسيره ١٤٤٨هـ</span><span class="fn">PDF</span></a></li></ul>
       </div>
     </section>
 
@@ -502,7 +514,7 @@
           <li><svg viewBox="0 0 100 100"><use href="#rubhizb"/></svg>صور أو أدلة توثيقية من التنفيذ</li>
           <li><svg viewBox="0 0 100 100"><use href="#rubhizb"/></svg>نتائجها وأثرها على الطالبات</li>
         </ul>
-        <div class="upload-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 4v13m0 0-4-4m4 4 4-4M5 20h14"/></svg>أضيفي هنا توثيق المبادرات والمسابقات</div>
+        <ul class="files"><li><a href="files/10-musalla-announcement.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5"/></svg><span class="ft">إعلان وجدول برنامج «خيرٌ وأبقى» لتفعيل المصلى</span><span class="fn">PDF</span></a></li><li><a href="files/10-khair-wa-abqa-video.mp4" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5"/></svg><span class="ft">فيديو برنامج «خيرٌ وأبقى»</span><span class="fn">فيديو</span></a></li></ul>
       </div>
     </section>
 
@@ -521,7 +533,7 @@
           <li><svg viewBox="0 0 100 100"><use href="#rubhizb"/></svg>تصميم بصري داعم لفهم الطالبات</li>
           <li><svg viewBox="0 0 100 100"><use href="#rubhizb"/></svg>روابط أو ملفات قابلة للتحميل من الموقع</li>
         </ul>
-        <div class="upload-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 4v13m0 0-4-4m4 4 4-4M5 20h14"/></svg>أضيفي هنا العروض التقديمية</div>
+        <ul class="files"><li><a href="files/11-yusuf-46-57-full.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5"/></svg><span class="ft">سورة يوسف ٤٦–٥٧: عرض كامل</span><span class="fn">عرض</span></a></li><li><a href="files/11-yusuf-46-51-s1.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5"/></svg><span class="ft">سورة يوسف ٤٦–٥١: الحصة الأولى</span><span class="fn">عرض</span></a></li><li><a href="files/11-yusuf-52-57-s2.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5"/></svg><span class="ft">سورة يوسف ٥٢–٥٧: الحصة الثانية</span><span class="fn">عرض</span></a></li><li><a href="files/11-yusuf-102-111-full.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5"/></svg><span class="ft">سورة يوسف ١٠٢–١١١: عرض كامل</span><span class="fn">عرض</span></a></li><li><a href="files/11-yusuf-102-106-s1.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5"/></svg><span class="ft">سورة يوسف ١٠٢–١٠٦: الحصة الأولى</span><span class="fn">عرض</span></a></li><li><a href="files/11-yusuf-107-111-s2.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5"/></svg><span class="ft">سورة يوسف ١٠٧–١١١: الحصة الثانية</span><span class="fn">عرض</span></a></li></ul>
       </div>
     </section>
 
