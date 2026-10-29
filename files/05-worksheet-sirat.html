@@ -1,0 +1,87 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>ورقة عمل على الصراط المستقيم</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* Layout: two A4 worksheets, dawn-to-dusk header band over three station cards. */
+:root{--paper:#FFF8E7;--night:#1B2740;--dawn:#E9A94B;--sand:#F2D9A0;--cream:#FBEFD5;--ochre:#C8873A;--terra:#A96B2B;--teal:#1F7A77;--green:#2F6B4F;--ground:#E7DFCB;--ink:#1B2740;
+--display:'Reem Kufi','Segoe UI',Tahoma,sans-serif;--body:'Tajawal','Segoe UI',Tahoma,sans-serif}
+*{box-sizing:border-box}
+html,body{background:var(--ground)}
+body{margin:0;color:var(--ink);font-family:var(--body);direction:rtl;padding-block:20px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;align-items:center;gap:24px}
+.sheet{width:100%;max-width:794px;background:var(--paper);box-shadow:0 2px 14px rgba(27,39,64,.18);overflow:hidden;padding-bottom:18px;display:flex;flex-direction:column;gap:12px}
+header{position:relative;min-height:112px;background:linear-gradient(90deg,var(--night),#5b4a63 45%,var(--dawn));display:flex;align-items:center;justify-content:center;padding:14px 12px}
+.sun{position:absolute;right:4%;top:50%;width:64px;height:64px;margin-top:-32px;border-radius:50%;background:#FFD98A;box-shadow:inset 0 0 0 16px #FFF1C7,0 0 0 8px rgba(255,217,138,.35)}
+.moon{position:absolute;left:6%;top:50%;width:40px;height:40px;margin-top:-26px;border-radius:50%;background:var(--sand);box-shadow:10px -4px 0 0 #2e3a5c inset}
+.plate{position:relative;background:var(--cream);border:2px solid var(--ochre);border-radius:12px;padding:8px 22px;text-align:center;max-width:76%}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(17px,3.6vw,28px);margin:0;line-height:1.25;text-wrap:balance}
+.ayah{margin:2px 0 0;font-weight:700;color:var(--terra);font-size:clamp(12px,2.2vw,16px)}
+.name{margin:0;padding:0 24px;display:flex;justify-content:space-between;gap:12px;font-weight:700;font-size:15px}
+.name u{display:inline-block;width:230px;max-width:40vw;border-bottom:1.5px dotted var(--ink)}.name u.s{width:90px}
+.solvednote{justify-content:center}
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:0 14px;direction:rtl}
+.st{border:2.5px solid var(--c);border-radius:10px;background:#fff;overflow:hidden;min-width:0;display:flex;flex-direction:column;gap:8px;padding-bottom:10px}
+.s1{--c:var(--dawn)}.s2{--c:var(--teal)}.s3{--c:var(--terra)}
+.st h2{margin:0;background:var(--c);color:var(--ink);font-family:var(--display);font-weight:700;font-size:19px;padding:7px 12px;display:flex;align-items:center;gap:10px}
+.s2 h2,.s3 h2{color:#FFF8E7}
+.st h2 b{width:30px;height:30px;border-radius:50%;background:var(--cream);color:var(--ink);border:2px solid var(--ink);display:grid;place-items:center;font-size:16px;font-weight:700}
+ul{list-style:none;margin:0;padding:0 10px;display:flex;flex-direction:column;gap:8px}
+.mean{color:var(--teal);font-weight:700;font-size:13.5px;gap:3px}
+.rows li{border:1.5px solid var(--c);border-radius:8px;padding:7px 9px;font-weight:700;font-size:14px;line-height:1.5;display:flex;flex-direction:column;gap:4px;background:#fffaf0}
+.s1 .rows li{flex-direction:row;align-items:center;justify-content:space-between;font-size:16px}
+.rows i{font-style:normal;margin-inline-end:6px;color:var(--c)}
+.box{width:44px;height:30px;border:2px solid var(--ochre);border-radius:7px;background:#fff;display:grid;place-items:center}
+.line{display:block;border-bottom:1.5px dotted var(--c);height:22px}
+.hint{margin:0;padding:0 12px;font-weight:700;font-size:13px;color:var(--teal)}
+.ans{color:var(--green);font-size:17px}
+.solved{color:var(--green);font-weight:700}
+.solved::before{content:"\2190  "}
+footer{padding:4px 24px 0;display:flex;gap:22px;flex-wrap:wrap;justify-content:center;font-weight:700;font-size:15px}
+footer em{font-style:normal;color:var(--terra)}
+@media (max-width:640px){.cols{grid-template-columns:1fr}.name{flex-direction:column}.plate{max-width:70%}}
+@media print{body{background:#fff;padding:0}.sheet{box-shadow:none;max-width:none;break-after:page}}
+
+.tabs{display:flex;gap:8px;flex-wrap:wrap;align-items:center;justify-content:center;font-family:var(--body);font-size:14px;font-weight:700}
+.tabs button{font:inherit;border:2px solid var(--night);background:#fff;color:var(--night);padding:7px 16px;border-radius:8px;cursor:pointer}
+.tabs button.on{background:var(--night);color:var(--cream)}
+.tabs button:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
+.tabs span{flex-basis:100%;text-align:center;font-weight:500;color:#5a5340}
+.sheet{min-height:1123px}.cols{flex:1}.st{justify-content:flex-start}.rows{flex:0 0 auto}
+@media print{@page{size:A4;margin:0}html,body{background:#fff}body{padding:0;display:block}.tabs{display:none}
+.sheet{width:210mm;height:297mm;min-height:0;max-width:none;box-shadow:none;break-after:avoid;overflow:hidden;-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+</style>
+<nav class="tabs" aria-label="اختيار الورقة"><button id="t1" class="on" type="button">الورقة للطالبات</button><button id="t2" type="button">الحل للمعلمة</button><span>للطباعة: اختاري الورقة ثم اطبعي الصفحة من المتصفح (A4)</span></nav>
+<section class="sheet" id="sheet-blank">
+<header><div class="sun"></div><div class="moon"></div>
+<div class="plate"><h1>ورقة العمل · على الصراط المستقيم</h1><p class="ayah">﴿فَاسْتَقِمْ كَمَا أُمِرْتَ وَمَن تَابَ مَعَكَ﴾ <small>[هود: ١١٢]</small></p></div></header>
+<p class="name"><span>اسم الطالبة: <u></u></span><span>الصف: <u class="s"></u></span></p>
+<div class="cols">
+<article class="st s1"><h2><b>١</b>المفردات</h2>
+<ul class="mean"><li>أ - ساعات من الليل</li><li>ب - لا تميلوا بمداهنة أو مودة</li><li>ج - الجن</li><li>د - أول النهار وآخره</li></ul>
+<ul class="rows"><li><span class="wd"><i>١</i>لا تركنوا</span><span class="box"></span></li><li><span class="wd"><i>٢</i>طرفي النهار</span><span class="box"></span></li><li><span class="wd"><i>٣</i>زُلفًا من الليل</span><span class="box"></span></li><li><span class="wd"><i>٤</i>الجِنّة</span><span class="box"></span></li></ul></article>
+<article class="st s2"><h2><b>٢</b>أصنّف</h2><p class="hint">اكتبي قلبية أو عملية أمام كل أمر:</p><ul class="rows"><li><span class="q"><i>١</i>استقامة القلب والثبات على الدين</span><span class="line"></span></li><li><span class="q"><i>٢</i>إقامة الصلاة</span><span class="line"></span></li><li><span class="q"><i>٣</i>الأمر بالتوكل على الله</span><span class="line"></span></li><li><span class="q"><i>٤</i>عدم تجاوز حدود الله أو الانحراف عن الشرع</span><span class="line"></span></li></ul></article>
+<article class="st s3"><h2><b>٣</b>أكمل</h2><ul class="rows"><li><span class="q"><i>١</i>مكفّرات الذنوب أمران تدل عليهما الآيتان:</span><span class="line"></span><span class="line"></span></li><li><span class="q"><i>٢</i>من ثمرات الأمر بالمعروف والنهي عن المنكر:</span><span class="line"></span></li><li><span class="q"><i>٣</i>«قُلْ: آمَنْتُ بِاللَّهِ، ثُمَّ ..........»</span></li></ul></article>
+</div>
+<footer>قيّمي نفسك: <span>○ أتقنتُ</span><span>○ أحتاج إلى مراجعة</span><em>وفّقكِ الله</em></footer>
+</section>
+<section class="sheet" id="sheet-solved" hidden>
+<header><div class="sun"></div><div class="moon"></div>
+<div class="plate"><h1>ورقة العمل محلولة · على الصراط المستقيم</h1><p class="ayah">﴿فَاسْتَقِمْ كَمَا أُمِرْتَ وَمَن تَابَ مَعَكَ﴾ <small>[هود: ١١٢]</small></p></div></header>
+<p class="name solvednote">قارني إجابتك بالحل ثم صحّحي ورقتك</p>
+<div class="cols">
+<article class="st s1"><h2><b>١</b>المفردات</h2>
+<ul class="mean"><li>أ - ساعات من الليل</li><li>ب - لا تميلوا بمداهنة أو مودة</li><li>ج - الجن</li><li>د - أول النهار وآخره</li></ul>
+<ul class="rows"><li><span class="wd"><i>١</i>لا تركنوا</span><span class="box"><b class="ans">ب</b></span></li><li><span class="wd"><i>٢</i>طرفي النهار</span><span class="box"><b class="ans">د</b></span></li><li><span class="wd"><i>٣</i>زُلفًا من الليل</span><span class="box"><b class="ans">أ</b></span></li><li><span class="wd"><i>٤</i>الجِنّة</span><span class="box"><b class="ans">ج</b></span></li></ul></article>
+<article class="st s2"><h2><b>٢</b>أصنّف</h2><p class="hint">اكتبي قلبية أو عملية أمام كل أمر:</p><ul class="rows"><li><span class="q"><i>١</i>استقامة القلب والثبات على الدين</span><span class="solved">قلبية</span></li><li><span class="q"><i>٢</i>إقامة الصلاة</span><span class="solved">عملية</span></li><li><span class="q"><i>٣</i>الأمر بالتوكل على الله</span><span class="solved">قلبية</span></li><li><span class="q"><i>٤</i>عدم تجاوز حدود الله أو الانحراف عن الشرع</span><span class="solved">عملية</span></li></ul></article>
+<article class="st s3"><h2><b>٣</b>أكمل</h2><ul class="rows"><li><span class="q"><i>١</i>مكفّرات الذنوب أمران تدل عليهما الآيتان:</span><span class="solved">فعل الطاعات، واجتناب الكبائر</span></li><li><span class="q"><i>٢</i>من ثمرات الأمر بالمعروف والنهي عن المنكر:</span><span class="solved">النجاة من عذاب الله في الدنيا والآخرة، وصلاح الفرد والمجتمع</span></li><li><span class="q"><i>٣</i>«قُلْ: آمَنْتُ بِاللَّهِ، ثُمَّ ..........»</span><span class="solved">استقِمْ</span></li></ul></article>
+</div>
+<footer>قيّمي نفسك: <span>○ أتقنتُ</span><span>○ أحتاج إلى مراجعة</span><em>وفّقكِ الله</em></footer>
+</section>
+<script>
+(function(){var a=document.getElementById('sheet-blank'),b=document.getElementById('sheet-solved'),t1=document.getElementById('t1'),t2=document.getElementById('t2');
+function show(x){a.hidden=!x;b.hidden=x;t1.classList.toggle('on',x);t2.classList.toggle('on',!x);}
+t1.onclick=function(){show(true)};t2.onclick=function(){show(false)};
+if(location.hash==='#solved')show(false);})();
+</script>
+</body></html>
